@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+<<<<<<< Updated upstream
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Mi primera página web personal" />
     <title>Mi Primera Página - Germán Romero</title>
+=======
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mi primera página web personal">
+    <title>Germán Romero</title>
+>>>>>>> Stashed changes
   </head>
   <body>
     <header>
@@ -37,9 +44,105 @@
           <li>Tecnología</li>
         </ul>
       </section>
+<<<<<<< Updated upstream
     </main>
 
     <footer id="contacto">
+=======
+
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Puedes contactarme a través de mi correo: germanrole98@gmail.com</p>
+      </section>
+
+      <section id="formulario">
+        <h2>Formulario</h2>
+        <form action="/procesar" method="POST" novalidate>
+          <fieldset>
+            <legend>Información Personal</legend>
+
+            <label for="nombre">Nombre completo:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Tu nombre y apellido"
+              required
+            >
+
+            <label for="email">Correo electrónico:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="correo@correo.com"
+              required
+            >
+
+            <label for="telefono">Teléfono:</label>
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              placeholder="3001111111"
+            >
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
+
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+              <option value="">Selecciona un país</option>
+              <option value="mx">México</option>
+              <option value="es">España</option>
+              <option value="ar">Argentina</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <h2>Ejemplo tablas semánticas</h2>
+
+    <table>
+      <caption>
+        Lista de Productos
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Producto</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Stock</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">001</th>
+          <td>Laptop</td>
+          <td>$1,200</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <th scope="row">002</th>
+          <td>Mouse</td>
+          <td>$25</td>
+          <td>50</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row" colspan="3">Total:</th>
+          <td>$1,225</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <footer id="footer">
+>>>>>>> Stashed changes
       <p>&copy; 2025 - Germán Romero. Aprendiendo desarrollo frontend.</p>
     </footer>
   </body>
